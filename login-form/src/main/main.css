@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-color:#fff;
+    --form-radius:15px;
+}
+
+.main  {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 90vh;
+    /* color: #1b0000; */
+    /* border: 1px solid red; */
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    width: 310px;
+    height: 420px;
+    padding: 1rem;
+    font-weight: bold;
+    border: 2px solid #d6d6d6;
+    border-radius: var(--form-radius);
+    background: transparent;
+    position: relative;
+    backdrop-filter: blur(20px);
+    box-shadow: 2px 1px 2px 1px #000,
+                -1px -2px 2px #000;
+
+}
+
+#form__close {
+    width: 32px;
+    height: 32px;
+    color: var(--font-color);
+    background: #1e4571;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    border-top-right-radius: var(--form-radius);
+    border-bottom-left-radius:  var(--form-radius);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__title {
+    margin-block: 2rem 1rem;
+}
+
+#form label {
+    margin: 1rem;
+
+    /* border: 1px solid red; */
+}
+
+#form label span {
+    color: #a6d5fc;
+    font-size: 0.85rem;
+    position: absolute;
+    transform: translateY(5px);
+}
+
+#form label input {
+    width: 85%;
+    height: 1.7rem;
+    font-weight: 600;
+    padding: 0.25rem;
+    margin-block: 1.2rem;
+    background: #e4e9ed;
+    border: 1px solid transparent;
+    outline: none;
+    border-bottom: 2px solid rgb(5, 87, 175);
+    transition: all 0.33s ease;
+}
+
+#form label input:focus{
+    transform: translateY(3px);
+}
+
+.btn {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-block: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    background-color: #0557af;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form p span {
+    margin-right: 0.2rem;
+}
+
+#form p a {
+    text-decoration: none;
+    color: #94bff0;
+    font-weight: bold;
+}
